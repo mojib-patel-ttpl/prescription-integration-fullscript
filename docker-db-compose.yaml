@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  fullscript-thinkitive-db:
+    image: postgres:13-alpine
+    container_name: thinkitive-postgres-container-lts
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - fullscript-thinkitive-vol:/var/lib/postgresql/data
+
+volumes:
+  fullscript-thinkitive-vol:

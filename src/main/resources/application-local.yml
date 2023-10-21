@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+fullscript:
+  client:
+    id: Ly_oimhVXx6IgxmiyN3f0m4Tqb_1wPp09bUr05b3l4I
+    secret: JIufTR8yTisov2Tk4a78v9pXUrfOafWDy28Ul04LDDA
+    redirect-url: http://localhost:5173/success
+  api:
+    url: https://api-us-snd.fullscript.io/api
